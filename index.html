@@ -8,7 +8,7 @@
 /* Reset */
 * { margin:0; padding:0; box-sizing:border-box; }
 
-/* Body background: dark paper texture with subtle color */
+/* Body background with paper/grain texture */
 body {
   font-family: "Courier New", monospace;
   background-color: #1c1c1c;
@@ -17,17 +17,18 @@ body {
   line-height: 1.6;
   padding: 0;
   margin: 0;
-  background-image: repeating-linear-gradient(
-    0deg,
-    rgba(255,255,255,0.02) 0px,
-    rgba(255,255,255,0.02) 1px,
-    transparent 1px,
-    transparent 6px
-  ), 
-  radial-gradient(circle, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.02) 0px,
+      rgba(255,255,255,0.02) 1px,
+      transparent 1px,
+      transparent 6px
+    ),
+    radial-gradient(circle, rgba(255,255,255,0.02) 1px, transparent 1px);
 }
 
-/* Container for all content, slightly skewed for zine effect */
+/* Container */
 .container {
   max-width: 850px;
   margin: 50px auto;
@@ -118,5 +119,3 @@ footer {
 
 </body>
 </html>
-Update to grungy DIY zine version
-
