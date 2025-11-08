@@ -8,67 +8,83 @@
 /* Reset */
 * { margin:0; padding:0; box-sizing:border-box; }
 
-/* Body background & subtle paper texture */
+/* Body background: dark paper texture with subtle color */
 body {
   font-family: "Courier New", monospace;
-  background-color: #111;
-  color: #eee;
+  background-color: #1c1c1c;
+  color: #f0f0f0;
   text-align: center;
   line-height: 1.6;
-  margin: 0;
   padding: 0;
+  margin: 0;
   background-image: repeating-linear-gradient(
     0deg,
     rgba(255,255,255,0.02) 0px,
     rgba(255,255,255,0.02) 1px,
     transparent 1px,
-    transparent 4px
-  );
+    transparent 6px
+  ), 
+  radial-gradient(circle, rgba(255,255,255,0.02) 1px, transparent 1px);
 }
 
-/* Main container (slightly skewed for DIY zine effect) */
+/* Container for all content, slightly skewed for zine effect */
 .container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 25px;
-  background-color: rgba(20,20,20,0.88);
-  border: 2px dashed #555;
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(30,30,30,0.92);
+  border: 2px dashed #888;
   transform: rotate(-0.5deg);
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: inset 0 0 25px rgba(0,0,0,0.5);
 }
 
 /* Logo */
 .logo img {
   max-width: 320px;
-  margin: 30px auto 20px auto;
+  margin: 30px auto 25px auto;
   display: block;
-  filter: brightness(1.1) contrast(1.3) grayscale(15%);
+  filter: brightness(1.1) contrast(1.3) grayscale(10%);
   image-rendering: pixelated;
 }
 
 /* Headings */
 h2 {
-  color: #ccc;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #555;
+  color: #e0e0e0;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #777;
   display: inline-block;
-  padding-bottom: 3px;
-  font-size: 18px;
+  padding-bottom: 5px;
+  font-size: 20px;
   letter-spacing: 1px;
   transform: rotate(0.5deg);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
 }
 
 /* Links */
-a { color: #d33; text-decoration: none; }
-a:hover { color: #fff; text-shadow: 0 0 5px #d33; }
+a {
+  color: #ff6666;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 5px #ffd700;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
 
 /* Footer */
 footer {
-  margin-top: 50px;
-  font-size: 0.8em;
-  color: #777;
-  padding-bottom: 20px;
+  margin-top: 60px;
+  font-size: 0.85em;
+  color: #aaa;
+  padding-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 </style>
 </head>
@@ -84,7 +100,7 @@ footer {
 
   <h2>Music</h2>
   <p>
-    <a href="#">Listen on Bandcamp</a> | 
+    <a href="#">Bandcamp</a> | 
     <a href="#">Spotify</a> | 
     <a href="#">Apple Music</a>
   </p>
@@ -99,6 +115,10 @@ footer {
 <footer>
   <p>© 2025 Sick Day</p>
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
